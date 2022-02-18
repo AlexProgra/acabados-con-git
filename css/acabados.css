@@ -469,3 +469,31 @@ header nav ul .li-contact a:hover {
   text-decoration: none;
   color: #000;
 }
+
+.footer {
+  background-color: rgb(3, 29, 0);
+}
+
+.footer ul {
+  display: flex;
+  width: 100%;
+  padding: 3rem 5rem;
+}
+
+.footer ul li {
+  margin: 2rem 4rem 2rem 4rem;
+  list-style: none;
+}
+
+.footer ul .img-f {
+  width: 14rem;
+  border-radius: 10rem;
+}
+
+.footer ul li a {
+  color: #fff;
+  width: 10rem;
+  text-decoration: none;
+  font-size: 1.4rem;
+  font-family: 'Poppins', sans-serif;
+}
