@@ -310,6 +310,11 @@ header nav ul .li-contact a:hover {
   margin-left: 0.5rem;
 }
 
+.serv-img img {
+  width: 100%;
+  height: 100%;
+}
+
 .line-serv-cont {
   width: 80%;
   height: 0.2rem;
