@@ -85,10 +85,10 @@ header nav ul .li-contact a:hover {
 }
 
 .fijar-header {
-  
   position: fixed;
   padding: 1.5rem 1.5rem 1rem 1.5rem;
   height: 4rem;
+  z-index: 10;
 }
 
 .fijar-header .img {
