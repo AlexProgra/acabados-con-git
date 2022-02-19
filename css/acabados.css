@@ -16,6 +16,18 @@ body{
   z-index: 1;
 }
 
+.go-up-h {
+  justify-content: center;
+}
+
+.go-up {
+  text-align: center;
+  position: fixed;
+  background-color: green;
+  z-index: 12;
+  width: 2.5rem;
+}
+
 header {
   background-color: #fff;
   padding: 3rem 1.5rem 1rem 1.5rem;
@@ -256,7 +268,7 @@ header nav ul .li-contact a:hover {
   border-right: 0.1rem rgb(255, 115, 0) solid;
 }
 
-.banner-navigation a {
+.banner-navigation div a {
   width: 100%;
   height: 100%;
   border-radius: 0.4rem;
