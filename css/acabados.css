@@ -17,15 +17,32 @@ body{
 }
 
 .go-up-h {
-  justify-content: center;
+  width: 2.9rem;
+  border-radius: 0.4rem;
+  transition: all 0.4s;
 }
 
 .go-up {
-  text-align: center;
+  background-color: rgb(31, 134, 0);
+  z-index: 1000;
+  opacity: 0;
+  width: 2.9rem;
+  margin-left: 139vh;
+  transform: translateX(200px);
+  transition: all 0.6s;
+  border-radius: 0.4rem;
   position: fixed;
-  background-color: green;
-  z-index: 12;
-  width: 2.5rem;
+}
+
+.go {
+  width: 100%;
+  border-radius: 0.4rem;
+  transition: all 0.4s;
+}
+
+.ir-a-header {
+  opacity: 1;
+  transform: translateX(0px);
 }
 
 header {

@@ -1,5 +1,4 @@
 window.addEventListener('scroll', function() {
-    var irHeader = document.querySelector("go-up");
-    irHeader.classList.toggle("ir-a-header",window.scrollY > 80)
-    irHeader.style.opacity = 1;
+    var header = document.querySelector(".go-up");
+    header.classList.toggle("ir-a-header",window.scrollY > 200)
 });
