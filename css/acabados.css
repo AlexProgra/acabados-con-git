@@ -7,6 +7,7 @@
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body{
@@ -57,7 +58,6 @@ header nav {
 }
 
 header nav ul {
-  display: flex;
   transition: all 0.5s;
 }
 
@@ -65,10 +65,11 @@ header nav ul li {
   margin-left: 2rem;
   list-style: none;
   transition: all 0.5s;
+  float: left;
 }
 
 header nav ul li a {
-  font-size: 1.6vh;
+  font-size: 1.6rem;
   color: green;
   text-decoration: none;
   padding: 1.2vh 2vh;
@@ -76,7 +77,6 @@ header nav ul li a {
   transition: all 0.5s;
   font-style: italic;
   font-weight: bold;
-  text-shadow: 0vh 0.1vh 1px #333;
 }
 
 
@@ -89,7 +89,7 @@ header nav ul .li-img a img {
 }
 
 header nav ul li>.menu-services {
-margin-left: 30vh;
+margin-left: 20vh;
 }
 
 header nav ul .li-contact a{
@@ -104,7 +104,7 @@ header nav ul .li-contact a:hover {
 
 .fijar-header {
   position: fixed;
-  padding: 2vh;
+  padding: 2vh 2vh;
   height: 6vh;
   z-index: 10;
   background-color: #fff;
@@ -119,7 +119,6 @@ header nav ul .li-contact a:hover {
 
 .fijar-header ul li a {
   color: green;
-  text-shadow: none;
 }
 
 .container .section-slider {
@@ -142,8 +141,8 @@ header nav ul .li-contact a:hover {
 
 .container .section-slider .section-slider-img .section-slider-text {
   width: 100%;
-  height: 20vh;
-  margin: 53vh 0 0 0vh;
+  height: 12vh;
+  margin: 50vh 0 0 0vh;
   position: absolute;
   z-index: 3;
   border-radius: 0.4rem;
@@ -152,7 +151,7 @@ header nav ul .li-contact a:hover {
 .section-slider-text h3 {
   width: 100%;
   font-family: sans-serif;
-  font-size: 4vh;
+  font-size: 5vh;
   color: green;
   font-weight: bold;
   text-decoration: none;
@@ -168,7 +167,7 @@ header nav ul .li-contact a:hover {
 
 .section-slider-text h2 {
   font-family: sans-serif;
-  font-size: 5vh;
+  font-size: 6vh;
   color: green;
   width: 100%;
   text-shadow: 0.2vh 0.1vh 5px #000;
@@ -207,10 +206,53 @@ header nav ul .li-contact a:hover {
 }
 
 .section-obra-blanca-gris-negra {
-  background-color: #000;
+  background-color: rgb(255, 249, 239);
   height: 35vh;
-  border-top: green 1rem solid;
-  border-bottom: green 1rem solid;
+  width: 100%;
+  border-top: green 0.2rem solid;
+  border-bottom: green 0.2rem solid;
+  padding: 3rem 3rem;
+}
+
+.obras {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  border-left: 1px orange solid;
+  border-right: 1px orange solid;
+}
+
+.obra-negra, .obra-gris, .obra-negra {
+  width: 27%;
+  height: 100%;
+  margin: 0 3%;
+  display: flex;
+  padding: 0.5rem 1rem;
+}
+
+.obras img {
+  width: 50%;
+  height: 100%;
+  margin-right: 3rem;
+  border-radius: 0.4rem;
+  border: 1px orange solid;
+}
+
+.obras h2 {
+  padding: 1rem 0;
+  margin: 0 auto;
+  font-size: 1.7rem;
+  font-family: sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  color: green;
+}
+
+.obras li {
+  font-size: 1.4rem;
+  font-family: sans-serif;
+  font-weight: bold;
+  color: green;
 }
 
 .section-services {
@@ -302,7 +344,7 @@ header nav ul .li-contact a:hover {
 
 .services {
   width: 70%;
-  height: 90%;
+  height: auto;
   float: right;
   margin-right: 2.5rem;
   margin-top: 3rem;
@@ -310,7 +352,7 @@ header nav ul .li-contact a:hover {
 
 .section-services-obra-blanca, .section-services-enchape, .section-services-pintar, .section-services-electricista, .section-services-gas, .section-services-todero {
   width: 100%;
-  height: 15%;
+  height: 35vh;
   border-radius: 0.4rem;
   border: #000 0.2rem solid;
   margin-bottom: 4rem;
@@ -335,7 +377,7 @@ header nav ul .li-contact a:hover {
 
 .services-img {
   width: 100%;
-  height: 60%;
+  height: 70%;
   margin-top: 2rem;
   display: flex;
 }
@@ -367,19 +409,10 @@ header nav ul .li-contact a:hover {
   transform: scale(1.1);
 }
 
-
-
-.line-serv-cont {
-  width: 80%;
-  height: 0.2rem;
-  margin: 0 auto;
-  background-color: turquoise;
-}
-
 .section-contact {
-  margin-top: 4rem;
+  margin-top: 8rem;
   width: 100%;
-  height: 25rem;
+  height: 30vh;
   padding: 4rem 2rem;
 }
 
@@ -473,15 +506,6 @@ header nav ul .li-contact a:hover {
   color: #000;
   font-family: 'Poppins', sans-serif;
   font-weight: 600;
-}
-
-.line-cont-emer, .line-head-serv {
-  width: 80%;
-  height: 0.2rem;
-  margin: 0 auto;
-  background-color: turquoise;
-  margin-top: 6rem;
-  margin-bottom: 6rem;
 }
 
 .section-emergency {
