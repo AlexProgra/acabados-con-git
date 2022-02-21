@@ -10,7 +10,7 @@ html {
 }
 
 body{
-  margin: 0 3rem 0 3rem;
+
   border-right: 0.1rem rgb(255, 115, 0) solid;
   border-left: 0.1rem rgb(255, 115, 0) solid;
   border-top: 0;
@@ -129,10 +129,10 @@ header nav ul .li-contact a:hover {
 
 .container .section-slider {
   width: 100%;
-  height: 60vh;
+  height: 95vh;
   background-color: #fff;
   padding: 0vh 0rem 0 0;
-  margin-bottom: 8vh;
+  margin-bottom: 1vh;
 }
 
 .container .section-slider .section-slider-img {
@@ -152,7 +152,7 @@ header nav ul .li-contact a:hover {
 .container .section-slider .section-slider-img .section-slider-text {
   width: auto;
   height: 30vh;
-  margin: 15% 0 0 0;
+  margin: 40vh 0 0 0;
   position: absolute;
   z-index: 3;
   border-radius: 0.4rem;
@@ -166,7 +166,7 @@ header nav ul .li-contact a:hover {
 }
 
 .WyNumber .slider-what-img {
-  width: 8rem;
+  width: 12vh;
   margin: 0 0rem 0 60vh;
 }
 
@@ -487,22 +487,22 @@ header nav ul .li-contact a:hover {
 
 .section-emergency {
   width: 100%;
-  height: 18rem;
-  padding-top: 4rem;
+  height: 10vh;
+  padding-top: 0.5rem;
 }
 
 .section-emergency-content {
   width: 50%;
-  height: 10rem;
+  height: 100%;
   margin: 0 auto;
 }
 
 .section-emergency-content-button {
   width: 100%;
-  height: 65%;
+  height: 100%;
   background-color: rgb(39, 117, 44);
   border-radius: 0.4rem;
-  padding: 1.8rem;
+  padding: 2%;
 }
 
 .section-emergency-content-button h2 {
