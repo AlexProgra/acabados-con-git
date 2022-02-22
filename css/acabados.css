@@ -15,10 +15,16 @@ body{
   z-index: 1;
 }
 
+a {
+  text-decoration: none;
+}
+
 .go-up-h {
   width: 2.9rem;
   border-radius: 0.4rem;
   transition: all 0.4s;
+  margin-left: 96%;
+  margin-top: 20vh;
 }
 
 .go-up {
@@ -26,11 +32,13 @@ body{
   z-index: 1000;
   opacity: 0;
   width: 2.9rem;
-  margin-left: 144vh;
+  margin-left: 96%;
+  margin-top: 20vh;
   transform: translateX(200px);
   transition: all 0.6s;
   border-radius: 0.4rem;
   position: fixed;
+  mask-position: top;
 }
 
 .go {
@@ -70,16 +78,18 @@ header nav ul li {
 
 header nav ul li a {
   font-size: 1.6rem;
-  color: green;
+  color: rgb(3, 185, 3);
   text-decoration: none;
   padding: 1.2vh 2vh;
   font-family: sans-serif;
   transition: all 0.5s;
   font-style: italic;
-  font-weight: bold;
+  text-shadow: 0.1vh 0.1vh 0.2vh #000;
 }
 
-
+header nav ul li a:hover {
+  color: #fff;
+}
 
 header nav ul .li-img a img {
   width: 12vh;
@@ -92,14 +102,25 @@ header nav ul li>.menu-services {
 margin-left: 20vh;
 }
 
-header nav ul .li-contact a{
-  transition: 0.3s;
-  border-radius: 0.2rem;
+header nav ul .li-contact {
+  transition: all 0.3s;
+}
 
+header nav ul .li-contact a{
+  transition: all 0.3s;
+  border-radius: 0.2rem;
+  background-color: rgb(255, 166, 0);
+  text-shadow: none;
+  color: rgb(2, 158, 2);
 }
 
 header nav ul .li-contact a:hover {
-  border-radius: 0.4rem;
+  box-shadow: 1px 1px 1px #000;
+  color: rgb(2, 158, 2);
+}
+
+header nav ul .li-contact:hover {
+  transform: scale(1.1);
 }
 
 .fijar-header {
@@ -118,7 +139,13 @@ header nav ul .li-contact a:hover {
 }
 
 .fijar-header ul li a {
-  color: green;
+  color: rgb(0, 129, 0);
+  text-shadow: none;
+}
+
+.fijar-header ul .li-contact a {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 46, 0);
 }
 
 .container .section-slider {
@@ -152,8 +179,7 @@ header nav ul .li-contact a:hover {
   width: 100%;
   font-family: sans-serif;
   font-size: 5vh;
-  color: green;
-  font-weight: bold;
+  color: rgb(3, 185, 3);
   text-decoration: none;
   font-style: italic;
   text-shadow: 0.2vh 0.1vh 5px #000;
@@ -168,7 +194,7 @@ header nav ul .li-contact a:hover {
 .section-slider-text h2 {
   font-family: sans-serif;
   font-size: 6vh;
-  color: green;
+  color: rgb(3, 185, 3);
   width: 100%;
   text-shadow: 0.2vh 0.1vh 5px #000;
 }
@@ -206,23 +232,23 @@ header nav ul .li-contact a:hover {
 }
 
 .section-obra-blanca-gris-negra {
-  background-color: rgb(255, 249, 239);
+  background-image: url("../img/img1.jpg");
+  background-attachment: fixed;
   height: 35vh;
   width: 100%;
-  border-top: green 0.2rem solid;
-  border-bottom: green 0.2rem solid;
+  border-top: orange 0.2rem solid;
+  border-bottom: orange 0.2rem solid;
   padding: 3rem 3rem;
+  margin-top: -1.1rem;
 }
 
 .obras {
   width: 100%;
   height: 100%;
   display: flex;
-  border-left: 1px orange solid;
-  border-right: 1px orange solid;
 }
 
-.obra-negra, .obra-gris, .obra-negra {
+.obra-negra, .obra-gris, .obra-blanca {
   width: 27%;
   height: 100%;
   margin: 0 3%;
@@ -235,7 +261,7 @@ header nav ul .li-contact a:hover {
   height: 100%;
   margin-right: 3rem;
   border-radius: 0.4rem;
-  border: 1px orange solid;
+  box-shadow: 3px 1px 3px #333;
 }
 
 .obras h2 {
@@ -244,15 +270,15 @@ header nav ul .li-contact a:hover {
   font-size: 1.7rem;
   font-family: sans-serif;
   font-style: italic;
-  font-weight: bold;
-  color: green;
+  color: rgb(3, 185, 3);
+  text-shadow: 0.1vh 0.1vh 1px #000;
 }
 
 .obras li {
   font-size: 1.4rem;
   font-family: sans-serif;
-  font-weight: bold;
-  color: green;
+  color: rgb(3, 185, 3);
+  text-shadow: 0.1vh 0.1vh 1px #000;
 }
 
 .section-services {
@@ -269,10 +295,10 @@ header nav ul .li-contact a:hover {
 }
 
 .services-title h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
   text-align: center;
   font-size: 3rem;
-  color: rgb(16, 49, 9);
+  color: rgb(0, 119, 0);
   font-style: italic;
   margin: 0 0 0rem 28.5rem;
 }
@@ -339,7 +365,6 @@ header nav ul .li-contact a:hover {
   font-size: 1.6rem;
   font-family: 'Poppins', sans-serif;
   font-style: italic;
-  font-weight: bold;
 }
 
 .services {
@@ -354,7 +379,7 @@ header nav ul .li-contact a:hover {
   width: 100%;
   height: 35vh;
   border-radius: 0.4rem;
-  border: #000 0.2rem solid;
+  border-bottom: orange 0.2rem solid;
   margin-bottom: 4rem;
   padding: 3rem 2rem;
 }
@@ -362,15 +387,16 @@ header nav ul .li-contact a:hover {
 .section-services-obra-blanca-text, .section-services-enchape-text, .section-services-electricista-text, .section-services-pintar-text, .section-services-gas-text, .section-services-todero-text {
   width: 100%;
   height: 20%;
-  background-color: #fff;
   border-radius: 0.4rem;
-  border: 0.2rem #000 solid;
+  border-bottom: 0.2rem orange solid;
   padding: 1.4rem;
 }
 
 .services h4 {
   font-size: 1.6rem;
-  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: rgb(0, 160, 0);
+  font-family: sans-serif;
   font-style: italic;
   text-align: center;
 }
@@ -378,7 +404,7 @@ header nav ul .li-contact a:hover {
 .services-img {
   width: 100%;
   height: 70%;
-  margin-top: 2rem;
+  margin-top: 3rem;
   display: flex;
 }
 
@@ -386,10 +412,9 @@ header nav ul .li-contact a:hover {
   width: 32%;
   height: 100%;
   border-radius: 0.4rem;
-  border: 0.2rem #000 solid;
-  margin-right: 0.5rem;
-  margin-left: 0.5rem;
+  margin: 0 0.5rem;
   overflow: hidden;
+  box-shadow: 3px 1px 3px rgb(134, 134, 134);
 }
 
 .serv-img a {
@@ -410,10 +435,10 @@ header nav ul .li-contact a:hover {
 }
 
 .section-contact {
-  margin-top: 8rem;
+  margin-top: 10vh;
   width: 100%;
   height: 30vh;
-  padding: 4rem 2rem;
+  padding: 4rem 6rem;
 }
 
 .section-contact-title{
@@ -421,15 +446,14 @@ header nav ul .li-contact a:hover {
   height: 40%;
   margin: 0 auto;
   text-align: center;
-  padding: 3rem;
+  padding: 3rem 0;
   border-radius: 0.4rem;
 }
 
 .section-contact-title h2 {
   font-size: 2rem;
-  font-weight: 800;
-  font-family: 'Poppins', sans-serif;
-
+  font-family: sans-serif;
+  font-style: italic;
 }
 
 .section-contact-social-networks {
@@ -443,11 +467,13 @@ header nav ul .li-contact a:hover {
 }
 
 .contact-a {
-  width: 18%;
+  width: 22%;
   height: 100%;
   text-decoration: none;
   margin-left: 4rem;
   margin-right: 4rem;
+  font-style: italic;
+  font-family: sans-serif;
 }
 
 .section-contact-social {
@@ -459,7 +485,7 @@ header nav ul .li-contact a:hover {
 }
 
 .contact-img {
-  width: 25%;
+  width: 19%;
   height: 100%;
   padding: 0.5rem 0.5rem 0.5rem 0;
   border-radius: 1rem;
@@ -482,15 +508,12 @@ header nav ul .li-contact a:hover {
 
 .section-contact-social-networks-instagram-img {
   background-color: rgb(221, 6, 167);
+  
   box-shadow: 5px 5px 9px -2px rgba(0,0,0,0.33);
 }
 
 .section-contact-social-networks-whatsapp-img {
-  background-color: rgb(0, 216, 0);
-  box-shadow: 5px 5px 9px -2px rgba(0,0,0,0.33);
-}
-
-.section-contact-social-networks-olx-img {
+  background-color: rgb(0, 167, 0);
   box-shadow: 5px 5px 9px -2px rgba(0,0,0,0.33);
 }
 
@@ -504,14 +527,14 @@ header nav ul .li-contact a:hover {
 .contact-text h3 {
   font-size: 1.6rem;
   color: #000;
-  font-family: 'Poppins', sans-serif;
-  font-weight: 600;
+  font-family: sans-serif;
 }
 
 .section-emergency {
   width: 100%;
-  height: 10vh;
-  padding-top: 0.5rem;
+  height: 13vh;
+  padding-top: 5vh;
+  margin: 3vh 0 7vh 0;
 }
 
 .section-emergency-content {
@@ -531,7 +554,7 @@ header nav ul .li-contact a:hover {
 .section-emergency-content-button h2 {
   text-align: center;
   font-size: 3rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
 }
 
 .section-emergency-content-button1 {
@@ -544,7 +567,7 @@ header nav ul .li-contact a:hover {
 .section-emergency-content-button1 h2 {
   text-align: center;
   font-size: 1.3rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
 }
 
 .section-emergency a {
@@ -554,6 +577,9 @@ header nav ul .li-contact a:hover {
 
 .footer {
   background-color: rgb(3, 29, 0);
+  width: 100%;
+  height: 40vh;
+  margin-top: 10vh;
 }
 
 .footer ul {
@@ -577,5 +603,6 @@ header nav ul .li-contact a:hover {
   width: 10rem;
   text-decoration: none;
   font-size: 1.4rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: sans-serif;
+  font-style: italic;
 }
