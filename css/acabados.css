@@ -234,7 +234,7 @@ header nav ul .li-contact:hover {
 }
 
 .section-obra-blanca-gris-negra {
-  background-image: url("../img/img1.jpg");
+  background-image: url("../img/obra-negra.jpg");
   background-attachment: fixed;
   height: 35vh;
   width: 100%;
@@ -267,20 +267,19 @@ header nav ul .li-contact:hover {
 }
 
 .obras h2 {
-  padding: 1rem 0;
+  padding: 1rem 3rem 1.5rem 0;
   margin: 0 auto;
   font-size: 1.7rem;
   font-family: sans-serif;
   font-style: italic;
-  color: rgb(3, 185, 3);
-  text-shadow: 0.1vh 0.1vh 1px #000;
+  color: rgb(0, 90, 0);
 }
 
 .obras li {
   font-size: 1.4rem;
   font-family: sans-serif;
-  color: rgb(3, 185, 3);
-  text-shadow: 0.1vh 0.1vh 1px #000;
+  color: rgb(0, 90, 0);
+  font-weight: 600;
 }
 
 .section-services {
@@ -374,7 +373,7 @@ header nav ul .li-contact:hover {
   height: auto;
   float: right;
   margin-right: 2.5rem;
-  margin-top: 3rem;
+  margin-top: 2rem;
 }
 
 .section-services-obra-blanca, .section-services-enchape, .section-services-pintar, .section-services-electricista, .section-services-gas, .section-services-todero {
