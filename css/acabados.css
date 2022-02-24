@@ -55,14 +55,15 @@ a {
 header {
   padding: 3rem 1.5rem 1rem 1.5rem;
   width: 100%;
-  height: 7.5vh;
+  height: 6rem;
   transition: all 0.7s;
-  z-index: 10;
-  position: absolute;
+  z-index: 1;
+  margin-bottom: 3rem;
 }
 
 header nav {
   transition: all 0.5s;
+  position: fixed;
 }
 
 header nav ul {
@@ -78,13 +79,12 @@ header nav ul li {
 
 header nav ul li a {
   font-size: 1.6rem;
-  color: rgb(3, 185, 3);
+  color: rgb(0, 104, 0);
   text-decoration: none;
-  padding: 1.2vh 2vh;
+  padding: 1rem;
   font-family: sans-serif;
   transition: all 0.5s;
   font-style: italic;
-  text-shadow: 0.1vh 0.1vh 0.2vh #000;
 }
 
 header nav ul li a:hover {
@@ -92,7 +92,7 @@ header nav ul li a:hover {
 }
 
 header nav ul .li-img a img {
-  width: 12vh;
+  width: 10rem;
   margin-top: -3rem;
   border-radius: 0.5rem;
   transition: all 0.5s;
@@ -135,6 +135,7 @@ header nav ul .li-contact:hover {
 .fijar-header .img {
   transform: scale(0.8);
   background-color: #fff;
+  margin-top: -1.5rem;
 }
 
 .fijar-header ul li a {
@@ -146,14 +147,21 @@ header nav ul .li-contact:hover {
   color: green;
 }
 
+.fijar-header ul .li-contact a {
+  padding: 1vh 2vh;
+}
+
 .fijar-header ul .li-contact a:hover {
   color: rgb(255, 255, 255);
 }
 
 .container .section-slider {
-  width: 100%;
-  height: 65vh;
+  width: 85%;
+  height: 45rem;
   background-color: #fff;
+  margin: 0 auto;
+  border: 2px orange solid;
+  
 }
 
 .container .section-slider .section-slider-img {
@@ -167,45 +175,6 @@ header nav ul .li-contact:hover {
   width: 100%;
   height: 100%;
 }
-
-.container .section-slider .section-slider-img .section-slider-text {
-  width: 100%;
-  height: 12vh;
-  margin: 50vh 0 0 0vh;
-  position: absolute;
-  z-index: 3;
-  border-radius: 0.4rem;
-}
-
-.section-slider-text h3 {
-  width: 100%;
-  font-family: sans-serif;
-  font-size: 5vh;
-  color: rgb(3, 185, 3);
-  text-decoration: none;
-  font-style: italic;
-  text-shadow: 0.2vh 0.1vh 5px #000;
-  margin-left: 106vh;
-}
-
-.WyNumber {
-  display: flex;
-  margin: 0.2vh 0;
-}
-
-.section-slider-text h2 {
-  font-family: sans-serif;
-  font-size: 6vh;
-  color: rgb(3, 185, 3);
-  width: 100%;
-  text-shadow: 0.2vh 0.1vh 5px #000;
-}
-
-.WyNumber .slider-what-img {
-  width: 20rem;
-  margin: 0vh 2vh 0 106vh;
-}
-
 
 .section-slider-img ul {
   padding: 0;
@@ -236,12 +205,12 @@ header nav ul .li-contact:hover {
 .section-obra-blanca-gris-negra {
   background-image: url("../img/obra-negra.jpg");
   background-attachment: fixed;
-  height: 35vh;
+  height: 30rem;
   width: 100%;
   border-top: orange 0.2rem solid;
   border-bottom: orange 0.2rem solid;
   padding: 3rem 3rem;
-  margin-top: -1.1rem;
+  margin-top: 0.4rem;
 }
 
 .obras {
