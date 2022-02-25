@@ -197,11 +197,24 @@ padding: 1vh 2vh;
     padding: 1rem;
     border-radius: 0.4rem;
     transition: 0.5s;
-    transform: scale(1.01);
+    opacity: 0;
 }
 
 .serv-see:hover {
     box-shadow: 0 0px 10px #999;
+}
+
+.mostrar-serv {
+    animation: mostrar-serv 0.4s;
+}
+
+@keyframes mostrar-serv {
+    0% {
+        transform: translateX(-60px);
+    }
+    100% {
+        transform: translateX(0px);
+    }
 }
 
 .serv-see-img {
