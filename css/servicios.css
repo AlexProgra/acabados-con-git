@@ -167,11 +167,11 @@ padding: 1vh 2vh;
 }
 
 .father-serv {
+    display: flex;
     width: 85%;
     height: 35rem;
     padding: 1rem 0rem 1rem 3rem;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
 .serv-see {
@@ -182,8 +182,13 @@ padding: 1vh 2vh;
     display: flex;
     border: 2px #eee solid;
     padding: 1rem;
-    box-shadow: 2px 1px 3px orange;
     border-radius: 0.4rem;
+    transition: 0.5s;
+    transform: scale(1.01);
+}
+
+.serv-see:hover {
+    box-shadow: 0 0px 10px #999;
 }
 
 .serv-see-img {
@@ -203,11 +208,46 @@ li {
 }
 
 .serv-see-content {
-    width: 35%;
+    width: 50%;
     height: 100%;
     padding: 1rem 2rem;
+    text-align: justify;
 }
 
 .serv-see-content h1 {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    font-style: italic;
+    margin-bottom: 5rem;
+    font-weight: 100;
+}
+
+.serv-see-content ul li {
+    font-size: 1.2rem;
+    font-family: sans-serif;
+    font-style: italic;
+}
+
+.serv-see-content .serv-see-price {
+    margin: 2rem 0;
+    font-size: 2rem;
+}
+
+.serv-see-content .serv-see-solicitar {
+    margin: 6rem 0 0 0;
+    transition: all 0.4s;
+}
+
+.serv-see-content .serv-see-solicitar a {
+    padding: 1rem;
+    border-radius: 0.4rem;
+    background-color: green;
+    color: #fff;
+    transition: all 0.4s;
+}
+
+.serv-see-content .serv-see-solicitar a:hover {
+    background-color: #fff;
+    border: 1px #070 solid;
+    color: #070;
 }
