@@ -258,7 +258,7 @@ header nav ul .li-contact a:hover {
 
 .section-services {
   width: 100%;
-  height: 200rem;
+  height: 300rem;
   padding-top: 4rem;
   margin-bottom: 3rem;
 }
@@ -352,7 +352,7 @@ header nav ul .li-contact a:hover {
 
 .section-services-obra-blanca, .section-services-enchape, .section-services-pintar, .section-services-electricista, .section-services-gas, .section-services-todero {
   width: 100%;
-  height: 30rem;
+  height: 50rem;
   border-radius: 0.4rem;
   border-bottom: orange 0.2rem solid;
   margin-bottom: 0rem;
@@ -384,10 +384,10 @@ header nav ul .li-contact a:hover {
 }
 
 .serv-img{
-  width: 32%;
+  width: 25%;
   height: 100%;
   border-radius: 0.4rem;
-  margin: 0 0.5rem;
+  margin: 0 auto;
   overflow: hidden;
   box-shadow: 3px 1px 3px rgb(134, 134, 134);
 }
