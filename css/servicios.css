@@ -179,9 +179,15 @@ padding: 1vh 2vh;
     font-weight: 100;
 }
 
+.father {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
 .father-serv {
     display: flex;
     width: 85%;
+    transition: 0.5s;
     height: 35rem;
     padding: 1rem 0rem 1rem 3rem;
     margin: 0 auto;
@@ -196,8 +202,7 @@ padding: 1vh 2vh;
     border: 2px #eee solid;
     padding: 1rem;
     border-radius: 0.4rem;
-    transition: 0.5s;
-    opacity: 0;
+    transition: all 0.5s;
 }
 
 .serv-see:hover {
@@ -210,10 +215,10 @@ padding: 1vh 2vh;
 
 @keyframes mostrar-serv {
     0% {
-        transform: translateX(-60px);
+        transform: translateY(100px);
     }
     100% {
-        transform: translateX(0px);
+        transform: translateY(0px);
     }
 }
 

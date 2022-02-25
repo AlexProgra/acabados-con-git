@@ -1,4 +1,4 @@
-let animado = document.querySelectorAll(".serv-see");
+let animado = document.querySelectorAll(".father");
 
 function mostrarScroll() {
     let scrollTop = document.documentElement.scrollTop;
